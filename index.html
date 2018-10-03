@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="header"> <!--- header - topo --->
+				<div class="container">
+					<div class="col-md-12">
+						<header>
+							<div class="row">
+								<div class="col-md-2">
+									<div id="logo"><img src="img/logo.png"></div>
+								</div>
+								<div class="col-md-7">
+									<nav>
+										<ul>
+											<li>Home</li>
+											<li>Devices</li>
+											<li>Delivery & Payment</li>
+											<li>Guarantee</li>
+											<li>About Us</li>
+										</ul>
+									</nav>
+								</div>
+								<div id="cart" class="col-md-2">
+									<div class="row">
+										<div class="col-md-2">
+											<img src="img/cart.png">
+										</div>
+										<div class="col-md-9">
+											<div><span>Cart</span> <span id="number-car">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-1">
+									<div id="singin"><button class="btn btn-custom"> SING IN </button></div>
+								</div>
+							</div>
+						</header>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="secondbar"> <!--- secondary bar --->
+				<div class="container">
+					<div class="col-md-8">
+						<nav>
+							<ul>
+								<li id="firstItem">Top Sales</li>
+								<li>Brand Focus</li>
+								<li id="selected">Hi-Tech</li>
+								<li>Best Sellers</li>
+								<li>Projects</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-1" id="support">
+						<p>Support</p>
+					</div>
+					<div class="col-md-2">
+						<img id="search" src="img/search.png"><input type="text" name="searchbar" id="searchbar" placeholder="I'm looking for ...">
+					</div>
+				</div>
+			</div>
+			<div class="row"> <!--- slide --->
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item item active">
+							<center><img class="d-block w-100" src="img/slide.png" alt="First slide"></center>
+						</div>
+						<div class="carousel-item item">
+							<center><img class="d-block w-100" src="img/slide.png" alt="Second slide"></center>
+						</div>
+						<div class="carousel-item item">
+							<center><img class="d-block w-100" src="img/slide.png" alt="Third slide"></center>
+						</div>
+					</div>
+					<a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev" onclick="$('#carouselExampleIndicators').carousel('prev')">&lsaquo;</a>
+					<a class="right carousel-control carousel-control-next" href="#carouselExampleIndicators" data-slide="next" onclick="$('#carouselExampleIndicators').carousel('next')">&rsaquo;</a>
+				</div>
+			</div>
+			<div class="row" id="mainsection"> <!--- main content --->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="sidenav">
+								<a href="#">Top Sales <i class="Chevron-l"></i></a>
+								<a href="#">Brand Focus <i class="Chevron-l"></i></a>
+								<button class="dropdown-btn">Hi-Tech 
+									<i class="fa fa-caret-down Chevron"></i>
+								</button>
+								<div class="dropdown-container">
+									<a href="#">CELL PHONES</a>
+									<a href="#">CAMERAS</a>
+									<a href="#">COMPUTERS</a>
+									<a href="#">TV, AUDIO</a>
+									<a href="#">VIDEO GAMES</a>
+								</div>
+							</div>
+							<div class="sidenavfilter">
+								<h2>BRANDS</h2><a href="#"> ALL </a>
+								<label for="apple">
+									<input type="checkbox" name="apple" id="apple">
+									<span class="text">Apple</span> 
+									<span id="itemnumber">32</span>
+								</label>
+								<label for="jbl">
+									<input type="checkbox" name="jbl" id="jbl">
+									<span class="text">Jbl</span>  
+									<span id="itemnumber">14</span>
+								</label>
+								<label for="bose">
+									<input type="checkbox" name="bose" id="bose">
+									<span class="text">Bose</span>  
+									<span id="itemnumber">3</span>
+								</label>
+								<label for="nest">
+									<input type="checkbox" name="nest" id="nest">
+									<span class="text">Nest</span>  
+									<span id="itemnumber">5</span>
+								</label>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="row">
+								<div class="col-md-4 panel">
+									<img src="img/apple.jpg">
+									<p class="item-name"> Apple TV 32GB </p>
+									<p class="item-color"> Black </p>
+									<p class="item-price"> $49.99 </p>
+								</div>
+								<div class="col-md-4 panel">
+									<img src="img/watch.jpg">
+									<p class="item-name"> Peddle Time </p>
+									<p class="item-color"> Red </p>
+									<p class="item-price"> $29.99 </p>
+								</div>
+								<div class="col-md-4 panel">
+									<img src="img/zendure.jpg">
+									<p class="item-name"> Zendure 4-Port USB </p>
+									<p class="item-color"> White </p>
+									<p class="item-price"> $49.99 </p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 panel">
+									<img src="img/Withings.jpg">
+									<p class="item-name">Withings Smart Body Analyzer ws-50</p>
+									<p class="item-color">Black</p>
+									<p class="item-price">$39.99</p>
+								</div>
+								<div class="col-md-8 panel" id="highlightpanel">
+									<img src="img/jbl.png">
+									<div>
+										<div class="col-md-6">
+											<div>
+												<span class="item-name">JBL Charge 2+</span>
+												<span class="item-color">black<span>
+											</div>
+										</div> 
+										<div class="col-md-6 details">
+											<span>16 GB</span><span id="buynow">Buy Now</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="footer"> <!--- footer --->
+				<div class="container" id="upperside">
+					<div class="col-md-2" id="logo-black">
+						<img src="img/logo-black.png">
+					</div>
+					<div class="col-md-8">
+						<ul>
+							<li>Home</li>
+							<li>Shop</li>
+							<li>Team</li>
+							<li>About Us</li>
+							<li>Contact Us</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul id="socialicos">
+							<li><img src="img/twitter.png"></li>
+							<li><img src="img/face.png"></li>
+							<li><img src="img/google+.png"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container">
+					<div class="col-md-8">
+						<p id="finalphrase">She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</p>
+					</div>
+					<div class="col-md-4" id="privacy-terms">
+						<a href="">Privacy Policy</a>
+						<a href="">Terms And Conditions</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+
+			for (i = 0; i < dropdown.length; i++) {
+			  dropdown[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var dropdownContent = this.nextElementSibling;
+			    if (dropdownContent.style.display === "block") {
+			      dropdownContent.style.display = "none";
+			    } else {
+			      dropdownContent.style.display = "block";
+			    }
+			  });
+			}
+		</script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	</body>
+</html>
